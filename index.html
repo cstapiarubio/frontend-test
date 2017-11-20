@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+	<title>Beetrack</title>
+</head>
+<body>
+	<div class="container">
+		<div class="row"><!--1 row-->
+			<div class="col s12 m12 l12">
+				<h4>Test</h4>
+				<h4>Beetrack</h4>
+			</div>	
+		</div><!--1 row-->
+		<div class="row"><!--2 row-->
+		    <div class="input-field col s4 m4 l4">
+		        <i class="material-icons prefix">search</i>
+		        <input id="icon_prefix" type="text" class="validate" placeholder="Buscar contacto...">
+		    </div>
+		    <div class="col s4 m4 l4 offset-s4 m4 l4"></div>
+		    <div class="col s4 m4 l4">
+		    	<a class="waves-effect btn modal-trigger" href="#modal1"><i class="material-icons left">add_circle_outline</i>Nuevo Contacto</a>
+				  <!-- Modal Structure -->
+				  <div id="modal1" class="modal">
+				    <div class="modal-content">
+				      <h6>Agregar nuevo contacto</h6>
+				      <label>URL Imagen de perfil*</label>
+				      <input type="text" name="" required>
+				      <label>Nombre*</label>
+				      <input type="text" name="" required>
+				      <label>Descripción*</label>
+				      <input type="text" name="" required>
+				    </div>
+				    <div class="modal-footer">
+				      <a href="#!" class="modal-action modal-close waves-effect waves-green btn">Guardar</a>
+				    </div>
+				  </div>
+		    </div>
+		</div><!--2 row-->
+		<div class="row contenedor"><!--3 row-->
+				<div class="col s2 m2 l2"><h5>Nombre</h5><ul id="cont_name" ></ul></div>
+				<div class=" col s10 m10 l10"><h5>Descripción</h5><ul id="cont_desc"></ul></div>
+		</div><!--3 row-->
+		<div class="row"><!--4 row-->
+			<div class="col s12 m12 l12">
+				<a class="right" href="badges.html"><i class="material-icons right">arrow_forward</i>Siguiente página</a>
+			</div>
+		</div><!--4 row-->			
+	</div><!--container-->
+	<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.0/js/materialize.min.js"></script>
+    <script type="text/javascript" src="db.json"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+</body>
+</html>
